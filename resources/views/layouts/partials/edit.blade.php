@@ -153,7 +153,7 @@
     </div>
 
     <div id="image" class="group_p">
-      <img id="v_image" src='{{ asset("storage/images/1715157874.png") }}' style='width: 100%;' alt="">
+      <img id="v_image" src='' style='width: 100%;' alt="">
     </div>
 
     <div id="generator" class="group_n">
