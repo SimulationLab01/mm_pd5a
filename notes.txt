@@ -10,7 +10,7 @@
 /*********Git Clone步驟********/
 
 複製repo
-git clone -b pd5 https://github.com/SimulationLab01/mm.git
+git clone -b pd5 https://github.com/SimulationLab01/{{branch name}}.git
 
 composer install
 npm install
@@ -23,8 +23,27 @@ php artisan serve --port=8000
 2.建立該版本migrations檔，位於/database/migrations/{{版本名}}
 3.php artisan migrate --path=/database/migrations/{{版本名}}
 
+php artisan migrate:refresh --path=/database/migrations/{{版本名}}
+
 /***********資料庫常用***********/
 -AUTO_INCREMENT 歸零
     ALTER TABLE `materials` AUTO_INCREMENT=1;
+
+
+
+/***********問題排除*************/
+Laravel log檔因為權限不足無法使用問題
+
+error message
+The stream or file "/var/www/html/test01/storage/logs/laravel.log" could not be opened in append mode: failed to open stream: Permission denied
+
+解法
+先取得目錄所有權
+sudo chown -R $USER:www-data storage
+sudo chown -R $USER:www-data bootstrap/cache
+
+再設定目錄的訪問權限
+chmod -R 775 storage
+chmod -R 775 bootstrap/cache
 
 

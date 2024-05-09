@@ -21,11 +21,11 @@
                     <ul class="log-reg-block visible-md-block visible-lg-block">
                         @if (Auth::check())
                             <li class="cd-log_reg">
-                                <a class="cd-signin" href="/logout">登出</a>
+                                <a class="cd-signin" href="{{env('ROOT_PATH')}}/logout">登出</a>
                             </li>
                         @else
                             <li class="cd-log_reg">
-                                <a class="cd-signin" href="/login">登入</a>
+                                <a class="cd-signin" href="{{env('ROOT_PATH')}}/login">登入</a>
                             </li>
                             <!-- <li class="cd-log_reg">
                                 <a class="cd-signup" href="javascript:void(0);">註冊</a>
@@ -52,14 +52,14 @@
                                 <a href="#delete">刪除清單</a>
                             </li> -->
                             <li class="cd-log_reg visible-xs-block visible-sm-block">
-                                <a class="cd-signin" href="/logout">登出</a>
+                                <a class="cd-signin" href="{{env('ROOT_PATH')}}/logout">登出</a>
                             </li>
                             <!-- <li class="cd-log_reg visible-xs-block visible-sm-block">
                                 <a class="cd-signup" href="javascript:void(0);">註冊</a>
                             </li> -->
                         @else
                             <li class="cd-log_reg visible-xs-block visible-sm-block">
-                                <a class="cd-signin" href="/login">登入</a>
+                                <a class="cd-signin" href="{{env('ROOT_PATH')}}/login">登入</a>
                             </li>
                         @endif
                     </ul>
