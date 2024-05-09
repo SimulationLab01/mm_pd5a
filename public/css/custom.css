@@ -1,0 +1,307 @@
+/* Add here all your css styles (customizations) */
+body {
+	
+}
+
+.one-page-header .navbar-nav > li > a {
+	font-size: 18px; 
+	color:#ddd !important;
+}
+.log-reg-block a {
+	font-size: 18px; 
+}
+.m_partial {
+	font-size: 18px; 
+	padding-top : 150px;
+	padding-bottom: 100px;
+}
+#sel_attr {
+	margin-top: 5px;
+}
+.logo {
+	width: 100px !important;
+}
+
+
+/*table*/
+#table tr{
+	cursor: pointer;
+}
+
+thead {
+	background-color: #56afa5 !important;
+	color: #fff !important; 
+}
+
+#table th {
+	padding-top: 6px;
+	padding-bottom: 6px; 
+}
+
+tbody {
+	background-color: #fff;
+}
+.count-title {
+	position: absolute;
+	top: 160px;
+	margin-left: 25px;
+}
+.count-item {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 19px;
+}
+@media (max-width: 991px) {
+	.count-title {
+		position: static;
+	}
+}
+/*end table*/
+
+/*edit*/
+.right_pannel {
+	padding-top: 1px;
+	background-color: #f6f6f6; 
+	position: fixed;
+	left:100%;
+	top:64px;
+	width: 35%;
+	height: 94%;
+	z-index: 999;
+	transition: all 0.5s;
+}
+
+.right_pannel.show {
+	left:65%;
+}
+
+.rp_nav {
+	position: absolute;
+	width: 100%;
+	min-height: 30px;
+	margin: 0;
+	border-left: none;
+	border-right: none;
+	background-color: #cccccc
+}
+.rp_nav ul{
+	width:100%;
+}
+.rp_nav li{
+	width:33%;
+	text-align: center;
+	cursor: pointer;
+}
+.rp_nav > ul > li > a{
+	background-color: #cccccc !important;
+	font-size: 16px;
+	font-weight: bold;
+}
+.rp_nav > ul > .active > a{
+	background-color: #f6f6f6 !important;
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #aaaaaa;
+
+}
+.rp_content {
+	height:82%;
+	margin: 0; 
+	padding-top: 35px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+#viewer, #editor, #history, #image {
+	padding-top: 45px;
+}
+.rp_btn_group {
+	position: relative;
+	margin: 0;
+	padding-right: 35px;
+}
+.rp_editmenu_field
+{
+	position: absolute;
+	top: -90px;
+	right: 0;
+	margin-right: 20px;
+	width: 120px;
+	background: #FDFDFD;
+	border: 1px solid #939393;
+	box-sizing: border-box;
+	border-radius: 14px;
+}
+.list-group-item {
+	text-align: left;
+	cursor: pointer;
+}
+.list-group-item:first-child {
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+.list-group-item:last-child {
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+
+.rp_btn_field{
+	display: inline;
+	margin-left: 10px;
+}
+.v_head {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 40px;
+}
+.v_title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+}
+.v_field {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	/*margin-top: 5px;*/
+/*	top: 50%;
+  	transform: translate(0, -50%);*/
+}
+.form-control {
+	height: 40px;
+	background: #FDFDFD;
+	border: 1px solid #939393;
+	border-radius: 20px
+}
+.v_text {
+/*  top: 50%;
+  transform: translate(0, -50%);*/
+}
+
+.v_value {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}
+.rp_content .form-group {
+	/*height:40px;*/
+  position: relative;
+	margin-bottom: 10px;
+	/*height:45px;*/
+}
+
+.form-group-title {
+	height:50px;
+	position: relative;
+}
+
+.table tbody tr.highlight td {
+  background-color: #ddd;
+}
+.rounded-Btn {
+  top:80%;
+  left:90%;
+  position: fixed;
+  background-color: #3f3f3f;
+  color: #E5E5E5;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100px;
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 998;
+}
+
+.daterangepicker {
+	z-index: 99999999;
+}
+
+.rounded-Btn span {
+	display: inline-block;
+/*	vertical-align: middle;
+	line-height: normal;*/
+}
+
+@media (max-width: 1300px) {
+  .right_pannel {
+  	position: fixed;
+  	top:64px;
+		width: 50%;
+		height: 94%;
+		z-index: 999;
+	}
+	.right_pannel.show {
+		left: 50%;
+	}
+	.rounded-Btn {
+		left: 88%;
+	}
+}
+
+@media (max-width: 991px) {
+  .right_pannel {
+  	position: fixed;
+  	top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		overflow-y:scroll;
+	}
+	.right_pannel.show {
+		left: 0%;
+	}
+	.rounded-Btn {
+		left:86%;
+	}
+	.rp_content {
+		height: auto;
+	}
+	.rp_btn_group {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.rp_nav ul{
+		margin: 0;
+	}
+	.rp_nav li{
+		float: left;
+	}
+}
+
+@media (max-width: 750px) {
+	.rounded-Btn {
+		left: 70%;
+	}
+	.daterangepicker {
+		top: 0px !important;
+		left: 0px !important;
+		width: 100% !important;
+		height: 100% !important;
+		position: fixed !important;
+	}
+	.drp-calendar {
+		padding: 8px !important;
+		width: 100% !important;
+		height: 50% !important;
+		max-width: 100% !important;
+	}
+	.calendar-table, .table-condensed {
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+/*end edit*/
+
+.hide {
+	display: none;
+}
+
+.disableScroll {
+	overflow: hidden;
+}

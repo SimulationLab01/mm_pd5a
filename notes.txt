@@ -1,0 +1,30 @@
+/*********資料庫搬移*********/
+更改檔案
+1.修改.env
+    DB_DATABASE= DBNAME
+    DB_USERNAME= 帳號
+    DB_PASSWORD= 密碼
+2. 修改.env ROOT_PATH
+3. 修改public/js/app.js root_path
+
+/*********Git Clone步驟********/
+
+複製repo
+git clone -b pd5 https://github.com/SimulationLab01/mm.git
+
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan serve --port=8000
+
+/*********資料庫建立********/
+1.確認DB設定正確
+2.建立該版本migrations檔，位於/database/migrations/{{版本名}}
+3.php artisan migrate --path=/database/migrations/{{版本名}}
+
+/***********資料庫常用***********/
+-AUTO_INCREMENT 歸零
+    ALTER TABLE `materials` AUTO_INCREMENT=1;
+
+
