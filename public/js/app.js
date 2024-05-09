@@ -389,10 +389,10 @@ var App = function() {
     var returnData = ''
     $attr = $("#sel_attr").val();
     if($attr == null)
-      $attr = 1;
+      $attr = 0;
 
     if(page == 'body')
-      ajax_url = ($attr == 0 || $attr == null) ? root_path+'/api/materials'
+      ajax_url = ($attr == 0) ? root_path+'/api/materials'
                               : root_path+'/api/materials/attr/'+$attr;
     // else if(page == 'detract')
     //   alert('detract');
