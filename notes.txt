@@ -18,11 +18,13 @@ cp .env.example .env
 php artisan key:generate
 php artisan serve --port=8000
 
+/*********設定檔案Link**********/
+php artisan storage:link
+
 /*********資料庫建立********/
 1.確認DB設定正確
 2.建立該版本migrations檔，位於/database/migrations/{{版本名}}
 3.php artisan migrate --path=/database/migrations/{{版本名}}
-
 php artisan migrate:refresh --path=/database/migrations/{{版本名}}
 
 /***********資料庫常用***********/

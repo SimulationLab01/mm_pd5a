@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{env('ROOT_PATH')}}/plugins/animate.css">
     <link rel="stylesheet" href="{{env('ROOT_PATH')}}/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="{{env('ROOT_PATH')}}/plugins/font-awesome/css/all.css">
-    <link href="{{env('ROOT_PATH')}}/plugins/jquery-loading/loading.css" rel="stylesheet">
+    <!-- <link href="{{env('ROOT_PATH')}}/plugins/jquery-loading/loading.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="assets/plugins/pace/pace-flash.css"> -->
     <!-- <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css"> -->
     <!-- <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css"> -->

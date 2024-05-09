@@ -392,7 +392,7 @@ var App = function() {
       $attr = 1;
 
     if(page == 'body')
-      ajax_url = ($attr == 0) ? root_path+'/api/materials'
+      ajax_url = ($attr == 0 || $attr == null) ? root_path+'/api/materials'
                               : root_path+'/api/materials/attr/'+$attr;
     // else if(page == 'detract')
     //   alert('detract');
