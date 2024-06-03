@@ -76,13 +76,14 @@ tbody {
 }
 
 .rp_nav {
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 	min-height: 30px;
 	margin: 0;
 	border-left: none;
 	border-right: none;
-	background-color: #cccccc
+	background-color: #cccccc;
+	z-index: 1;
 }
 .rp_nav ul{
 	width:100%;
@@ -105,15 +106,17 @@ tbody {
 
 }
 .rp_content {
-	height:82%;
+	/* height:82%; */
 	margin: 0; 
-	padding-top: 35px;
+	padding-top: 20px; 
+	padding-bottom: 15px;
 	padding-left: 35px;
 	padding-right: 35px;
+	overflow-y: scroll;
 }
-#viewer, #editor, #history, #image {
-	padding-top: 45px;
-}
+/* #viewer, #editor, #history, #image {
+	padding-top: 20px;
+} */
 .rp_btn_group {
 	position: relative;
 	margin: 0;
