@@ -8,10 +8,10 @@
             <div class="row contacts-in">
                 <div class="col-md-6 md-margin-bottom-40">
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-globe"></i>ACE LAB</li>
+                        <li><i class="fa fa-globe"></i>EID</li>
                         <li><i class="fa fa-home"></i>大帝國 B棟 3F</li>
-                        <li><i class="fa fa-phone"></i>15917</li>
-                        <li><i class="fa fa-envelope"></i> <a href="chuanlc_wang@compal.com">chuanlc_wang@compal.com</a></li>
+                        <li><i class="fa fa-phone"></i>15008</li>
+                        <li><i class="fa fa-envelope"></i> <a href="mailto:christ_chen@compal.com">Christ_Chen@compal.com</a></li>
                     </ul>
                 </div>
 
